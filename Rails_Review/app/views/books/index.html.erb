@@ -1,0 +1,7 @@
+<h1>List of Books written by <%= @author.first_name %> <%= @author.last_name %></h1>
+<a href="/authors"> Go to Authors</a>
+<% @books.each do |book| %>
+    <%= render book %>
+<% end %>
+
+<!-- <%= render @books %> -->
